@@ -1,0 +1,19 @@
+﻿@model GymDatabase.Models.Memebrship_paymentdto
+
+<h1>Create Membership Payment</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="MembershipId">Membership ID</label>
+        <input type="number" class="form-control" id="MembershipId" name="MembershipId" required />
+    </div>
+    <div class="form-group">
+        <label for="Amount">Amount</label>
+        <input type="number" class="form-control" id="Amount" name="Amount" required />
+    </div>
+    <div class="form-group">
+        <label for="PaymentDate">Payment Date</label>
+        <input type="date" class="form-control" id="PaymentDate" name="PaymentDate" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

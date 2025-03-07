@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GymDatabase.Models.Memebrship_paymentdto>
+
+<h1>Membership Payments</h1>
+<p>
+    <a href="@Url.Action("Create")">Create New Payment</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>PaymentId</th>
+            <th>MembershipId</th>
+            <th>Amount</th>
+            <th>PaymentDate</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model)
+        {
+            <tr>
+                <td>@payment.PaymentId</td>
+                <td>@payment.MembershipId</td>
+                <td>@payment.Amount</td>
+                <td>@payment.PaymentDate</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = payment.PaymentId })">Details</a> |
+                    <a href="@Url.Action("Edit", new { id = payment.PaymentId })">Edit</a> |
+                    <a href="@Url.Action("Delete", new { id = payment.PaymentId })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymDatabase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bbd7b0e73c803ecc4de232b129b4cf3713edd29")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39d054a27b60ffd868ad5f78d4c6eddb593ef27b")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymDatabase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymDatabase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

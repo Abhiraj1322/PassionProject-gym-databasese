@@ -1,0 +1,23 @@
+﻿@model GymDatabase.Models.Membershipdto
+
+@{
+    ViewData["Title"] = "Membership Details";
+}
+
+<h2>Membership Details</h2>
+
+<div>
+    <strong>Member Name:</strong> @Model.MemberName
+</div>
+<div>
+    <strong>Plan Type:</strong> @Model.PlanType
+</div>
+<div>
+    <strong>Start Date:</strong> @Model.StartDate.ToShortDateString()
+</div>
+<div>
+    <strong>End Date:</strong> @Model.EndDate.ToShortDateString()
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.MembershipId" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

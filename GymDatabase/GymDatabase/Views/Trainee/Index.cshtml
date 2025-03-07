@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GymDatabase.Models.TraineeDTO>
+
+@{
+    ViewData["Title"] = "Trainee List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Specialty</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var trainee in Model)
+        {
+            <tr>
+                <td>@trainee.Name</td>
+                <td>@trainee.Specialty</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = trainee.TrainerId })" class="btn btn-info">View</a>
+                    <a href="@Url.Action("Edit", new { id = trainee.TrainerId })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = trainee.TrainerId })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create")" class="btn btn-success">Create New Trainee</a>

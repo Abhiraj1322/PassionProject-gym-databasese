@@ -1,0 +1,15 @@
+﻿@model GymDatabase.Models.TraineeDTO
+
+@{
+    ViewData["Title"] = "Delete Trainee";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Are you sure you want to delete the trainee <strong>@Model.Name</strong>?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="TrainerId" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,23 @@
+﻿@model GymDatabase.Models.Memebrship_paymentdto
+
+<h1>Edit Membership Payment</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label for="PaymentId">Payment ID</label>
+        <input type="number" class="form-control" id="PaymentId" name="PaymentId" value="@Model.PaymentId" readonly />
+    </div>
+    <div class="form-group">
+        <label for="MembershipId">Membership ID</label>
+        <input type="number" class="form-control" id="MembershipId" name="MembershipId" value="@Model.MembershipId" required />
+    </div>
+    <div class="form-group">
+        <label for="Amount">Amount</label>
+        <input type="number" class="form-control" id="Amount" name="Amount" value="@Model.Amount" required />
+    </div>
+    <div class="form-group">
+        <label for="PaymentDate">Payment Date</label>
+        <input type="date" class="form-control" id="PaymentDate" name="PaymentDate" value="@Model.PaymentDate.ToString("yyyy-MM-dd")" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Documents\\web humber\\Back-end-devolpment\\GymDatabase\\GymDatabase\\GymDatabase.csproj": {}
+    "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\GymDatabase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Documents\\web humber\\Back-end-devolpment\\GymDatabase\\GymDatabase\\GymDatabase.csproj": {
+    "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\GymDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Documents\\web humber\\Back-end-devolpment\\GymDatabase\\GymDatabase\\GymDatabase.csproj",
+        "projectUniqueName": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\GymDatabase.csproj",
         "projectName": "GymDatabase",
-        "projectPath": "C:\\Users\\Owner\\Documents\\web humber\\Back-end-devolpment\\GymDatabase\\GymDatabase\\GymDatabase.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Documents\\web humber\\Back-end-devolpment\\GymDatabase\\GymDatabase\\obj\\",
+        "projectPath": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\GymDatabase.csproj",
+        "packagesPath": "C:\\Users\\Ritu\\.nuget\\packages\\",
+        "outputPath": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ritu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -106,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

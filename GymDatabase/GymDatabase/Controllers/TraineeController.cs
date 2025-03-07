@@ -1,33 +1,21 @@
 ﻿using GymDatabase.Data;
 using GymDatabase.Models;
 using Microsoft.AspNetCore.Mvc;
-
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+using System.Linq;
 
-/// <summary>
-/// Controller for managing trainee data, including CRUD operations (Create, Read, Update, Delete).
-/// </summary>
-[Route("api/[controller]")]
-[ApiController]
-public class TraineesController : ControllerBase
+public class TraineeController : Controller
 {
     private readonly ApplicationDbContext _context;
 
-    /// <summary>
-    /// Constructor that initializes the controller with the given database context.
-    /// </summary>
-    /// <param name="context">The application database context.</param>
-    public TraineesController(ApplicationDbContext context)
+    public TraineeController(ApplicationDbContext context)
     {
         _context = context;
     }
 
-    /// <summary>
-    /// Retrieves a list of all trainees with their basic details.
-    /// </summary>
-    /// <returns>A list of TraineeDTO objects.</returns>
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<TraineeDTO>>> GetTrainees()
+    // GET: Trainee (Index Page)
+    public async Task<IActionResult> Index()
     {
         var trainees = await _context.Trainees
             .Select(t => new TraineeDTO
@@ -38,121 +26,150 @@ public class TraineesController : ControllerBase
             })
             .ToListAsync();
 
-        return Ok(trainees);
+        return View(trainees); // Now passing List<TraineeDTO>
     }
 
-    /// <summary>
-    /// Retrieves a specific trainee by their ID.
-    /// </summary>
-    /// <param name="id">The ID of the trainee to retrieve.</param>
-    /// <returns>The trainee's details or a 404 error if not found.</returns>
-    [HttpGet("{id}")]
-    public async Task<ActionResult<TraineeDTO>> GetTrainee(int id)
+    // GET: Trainee/Details/5
+    public async Task<IActionResult> Details(int? id)
     {
+        if (id == null) return NotFound();
+
         var trainee = await _context.Trainees
-            .Where(t => t.TrainerId == id)
-            .Select(t => new TraineeDTO
-            {
-                TrainerId = t.TrainerId,
-                Name = t.Name,
-                Specialty = t.Specialty
-            })
-            .FirstOrDefaultAsync();
+            .FirstOrDefaultAsync(t => t.TrainerId == id);
 
-        if (trainee == null)
+        if (trainee == null) return NotFound();
+
+        // Convert Trainee to TraineeDTO
+        var dto = new TraineeDTO
         {
-            return NotFound();
-        }
-
-        return Ok(trainee);
-    }
-
-    /// <summary>
-    /// Updates a specific trainee's data.
-    /// </summary>
-    /// <param name="id">The ID of the trainee to update.</param>
-    /// <param name="traineeDTO">The updated trainee data.</param>
-    /// <returns>No content if successful, or a NotFound error if the trainee does not exist.</returns>
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutTrainee(int id, TraineeDTO traineeDTO)
-    {
-        if (id != traineeDTO.TrainerId)
-        {
-            return BadRequest();
-        }
-
-        var trainee = await _context.Trainees.FindAsync(id);
-        if (trainee == null)
-        {
-            return NotFound();
-        }
-
-        trainee.Name = traineeDTO.Name;
-        trainee.Specialty = traineeDTO.Specialty;
-
-        _context.Entry(trainee).State = EntityState.Modified;
-
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!TraineeExists(id))
-            {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
-        }
-
-        return NoContent();
-    }
-
-    /// <summary>
-    /// Creates a new trainee record.
-    /// </summary>
-    /// <param name="traineeDTO">The trainee data to be added.</param>
-    /// <returns>The newly created trainee record.</returns>
-    [HttpPost]
-    public async Task<ActionResult<Trainee>> PostTrainee(TraineeDTO traineeDTO)
-    {
-        var trainee = new Trainee
-        {
-            Name = traineeDTO.Name,
-            Specialty = traineeDTO.Specialty
+            TrainerId = trainee.TrainerId,
+            Name = trainee.Name,
+            Specialty = trainee.Specialty
         };
 
-        _context.Trainees.Add(trainee);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetTrainee), new { id = trainee.TrainerId }, trainee);
+        return View(dto); // Now passing TraineeDTO
     }
 
-    /// <summary>
-    /// Deletes a specific trainee by their ID.
-    /// </summary>
-    /// <param name="id">The ID of the trainee to delete.</param>
-    /// <returns>No content if successful, or a NotFound error if the trainee does not exist.</returns>
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteTrainee(int id)
+    // GET: Trainee/Create
+    public IActionResult Create()
     {
-        var trainee = await _context.Trainees.FindAsync(id);
-        if (trainee == null)
+        return View();
+    }
+
+    // POST: Trainee/Create
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(TraineeDTO dto)
+    {
+        if (ModelState.IsValid)
         {
-            return NotFound();
+            var trainee = new Trainee
+            {
+                Name = dto.Name,
+                Specialty = dto.Specialty
+            };
+
+            _context.Add(trainee);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        _context.Trainees.Remove(trainee);
-        await _context.SaveChangesAsync();
-
-        return NoContent();
+        return View(dto); // Ensure the view expects TraineeDTO
     }
 
-    private bool TraineeExists(int id)
+    [HttpGet("Edit/{id}")]
+    public async Task<IActionResult> Edit(int id)
     {
-        return _context.Trainees.Any(e => e.TrainerId == id);
+        var membership = await _context.Memberships.FindAsync(id);
+        if (membership == null) return NotFound();
+
+        var dto = new Membershipdto
+        {
+            MembershipId = membership.MembershipId,
+            MemberName = membership.MemberName,
+            PlanType = membership.PlanType,
+            StartDate = membership.StartDate,
+            EndDate = membership.EndDate
+        };
+
+        return View(dto);
+    }
+
+    // POST: Membership/Edit/5
+    [HttpPost("Edit/{id}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, Membershipdto dto)
+    {
+        if (id != dto.MembershipId) return BadRequest("ID mismatch");
+
+        if (ModelState.IsValid)
+        {
+            var membership = await _context.Memberships.FindAsync(id);
+            if (membership == null) return NotFound();
+
+            // Update fields
+            membership.MemberName = dto.MemberName;
+            membership.PlanType = dto.PlanType;
+            membership.StartDate = dto.StartDate;
+            membership.EndDate = dto.EndDate;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!await MembershipExists(id)) return NotFound();
+                else throw;
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        return View(dto);
+    }
+
+    private async Task<bool> MembershipExists(int id)
+    {
+        return await _context.Memberships.AnyAsync(e => e.MembershipId == id);
+    }
+
+
+// GET: Trainee/Delete/5
+public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null) return NotFound();
+
+        var trainee = await _context.Trainees
+            .FirstOrDefaultAsync(t => t.TrainerId == id);
+
+        if (trainee == null) return NotFound();
+
+        // Convert Trainee to TraineeDTO
+        var dto = new TraineeDTO
+        {
+            TrainerId = trainee.TrainerId,
+            Name = trainee.Name,
+            Specialty = trainee.Specialty
+        };
+
+        return View(dto); // Now passing TraineeDTO
+    }
+
+    // POST: Trainee/Delete/5
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        var trainee = await _context.Trainees.FindAsync(id);
+        if (trainee != null)
+        {
+            _context.Trainees.Remove(trainee);
+            await _context.SaveChangesAsync();
+        }
+        return RedirectToAction(nameof(Index));
+    }
+
+    private async Task<bool> TraineeExists(int id)
+    {
+        return await _context.Trainees.AnyAsync(t => t.TrainerId == id);
     }
 }

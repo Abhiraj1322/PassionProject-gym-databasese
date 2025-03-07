@@ -1,0 +1,18 @@
+﻿@model GymDatabase.Models.TraineeDTO
+
+@{
+    ViewData["Title"] = "Trainee Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <strong>Name:</strong> @Model.Name
+</div>
+<div>
+    <strong>Specialty:</strong> @Model.Specialty
+</div>
+
+<a href="@Url.Action("Edit", new { id = Model.TrainerId })" class="btn btn-warning">Edit</a>
+<a href="@Url.Action("Delete", new { id = Model.TrainerId })" class="btn btn-danger">Delete</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary mt-2">Back to List</a>
