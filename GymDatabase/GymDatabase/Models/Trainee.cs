@@ -8,7 +8,7 @@ namespace GymDatabase.Models
         public string Name { get; set; } 
         public string Specialty { get; set; }
 
-        public ICollection<MemberTraining> MemberTrainings { get; set; }
+        public ICollection<MemeberTraining> MemberTrainings { get; set; }
 
     }
     public class TraineeDTO

@@ -1,129 +1,174 @@
 ﻿using GymDatabase.Data;
 using GymDatabase.Models;
 using Microsoft.AspNetCore.Mvc;
-
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+using System.Linq;
+using GymDatabase.Data.Migrations;
 
-/// <summary>
-/// Controller for managing gym member training data, including CRUD operations (Create, Read, Update, Delete).
-/// </summary>
-[Route("api/[controller]")]
-[ApiController]
-public class MemberTrainingController : ControllerBase
+namespace GymDatabase.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    /// <summary>
-    /// Constructor that initializes the controller with the given database context.
-    /// </summary>
-    /// <param name="context">The application database context.</param>
-    public MemberTrainingController(ApplicationDbContext context)
+    public class MemeberTrainingController : Controller
     {
-        _context = context;
-    }
+        private readonly ApplicationDbContext _context;
 
-    /// <summary>
-    /// Retrieves a list of all member trainings with related membership and trainee data.
-    /// </summary>
-    /// <returns>A list of MemberTrainingDto objects.</returns>
-    [HttpGet("List")]
-    public async Task<ActionResult<IEnumerable<MemberTrainingdto>>> GetMemberTrainings()
-    {
-        var memberTrainings = await _context.MemberTrainings
-            .Include(mt => mt.Membership)  // Include related membership data
-            .Include(mt => mt.Trainee)     // Include related trainee data
-            .ToListAsync();
-
-        var memberTrainingDtos = memberTrainings.Select(mt => new MemberTrainingdto
+        public MemeberTrainingController(ApplicationDbContext context)
         {
-            MemberTrainingId = mt.MemberTrainingId,
-            MembershipId = mt.MembershipId,
-            TrainerId = mt.TrainerId,
-            TrainingType = mt.TrainingType,
-            Membership = new Membership
+            _context = context;
+        }
+
+        // GET: MemberTraining (Index Page)
+        public async Task<IActionResult> Index()
+        {
+            var trainings = await _context.MemberTrainings
+                .Select(t => new MemberTrainingdto
+                {
+                    MemberTrainingId = t.MemberTrainingId,
+                    MembershipId = t.MembershipId,
+                    TrainerId = t.TrainerId,
+                    TrainingType = t.TrainingType
+                })
+                .ToListAsync();
+
+            return View(trainings);
+        }
+
+        // GET: MemberTraining/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var training = await _context.MemberTrainings
+                .Include(t => t.Membership)
+                .Include(t => t.Trainee)
+                .FirstOrDefaultAsync(t => t.MemberTrainingId == id);
+
+            if (training == null) return NotFound();
+
+            var dto = new MemberTrainingdto
             {
-                MembershipId = mt.Membership.MembershipId,
-            },
-            Trainee = new Trainee
+                MemberTrainingId = training.MemberTrainingId,
+                MembershipId = training.MembershipId,
+                TrainerId = training.TrainerId,
+                TrainingType = training.TrainingType
+            };
+
+            return View(dto);
+        }
+
+        // GET: MemberTraining/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: MemberTraining/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(MemberTrainingdto dto)
+        {
+            if (ModelState.IsValid)
             {
-                TrainerId = mt.Trainee.TrainerId,
+                var training = new MemeberTraining
+                {
+                    MemberTrainingId = dto.MemberTrainingId,  // Correctly map MembershipId
+                    TrainerId = dto.TrainerId,        // Correctly map TrainerId
+                    TrainingType = dto.TrainingType   // Correctly map TrainingType
+                };
+
+                _context.Add(training);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-        }).ToList();
-
-        return Ok(memberTrainingDtos);
-    }
-
-    /// <summary>
-    /// Creates a new member training record.
-    /// </summary>
-    /// <param name="memberTraining">The member training data to be added.</param>
-    /// <returns>The newly created member training record.</returns>
-    [HttpPost]
-    public async Task<ActionResult<MemberTraining>> PostMemberTraining(MemberTraining memberTraining)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
+            return View(dto);
         }
 
-        _context.MemberTrainings.Add(memberTraining);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetMemberTrainings), new { id = memberTraining.MemberTrainingId }, memberTraining);
-    }
-
-    /// <summary>
-    /// Updates an existing member training record.
-    /// </summary>
-    /// <param name="id">The ID of the member training to update.</param>
-    /// <param name="memberTraining">The updated member training data.</param>
-    /// <returns>No content if successful, or a NotFound error if the member training does not exist.</returns>
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutMemberTraining(int id, MemberTraining memberTraining)
-    {
-        if (id != memberTraining.MemberTrainingId)
+        // GET: MemberTraining/Edit/5
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
         {
-            return BadRequest("MemberTraining ID mismatch.");
-        }
+            var training = await _context.MemberTrainings.FindAsync(id);
+            if (training == null) return NotFound();
 
-        _context.Entry(memberTraining).State = EntityState.Modified;
-
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!_context.MemberTrainings.Any(mt => mt.MemberTrainingId == id))
+            var dto = new MemberTrainingdto
             {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
+                MemberTrainingId = training.MemberTrainingId,
+                MembershipId = training.MembershipId,
+                TrainerId = training.TrainerId,
+                TrainingType = training.TrainingType
+            };
+
+            return View(dto);
         }
 
-        return NoContent();
-    }
-
-    /// <summary>
-    /// Deletes a member training record by its ID.
-    /// </summary>
-    /// <param name="id">The ID of the member training to delete.</param>
-    /// <returns>No content if successful, or a NotFound error if the member training does not exist.</returns>
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteMemberTraining(int id)
-    {
-        var memberTraining = await _context.MemberTrainings.FindAsync(id);
-        if (memberTraining == null)
+        // POST: MemberTraining/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, MemberTrainingdto dto)
         {
-            return NotFound();
+            if (id != dto.MemberTrainingId) return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                var training = await _context.MemberTrainings.FindAsync(id);
+                if (training == null) return NotFound();
+
+                training.MembershipId = dto.MembershipId;
+                training.TrainerId = dto.TrainerId;
+                training.TrainingType = dto.TrainingType;
+
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!await TrainingExists(id)) return NotFound();
+                    else throw;
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(dto);
         }
 
-        _context.MemberTrainings.Remove(memberTraining);
-        await _context.SaveChangesAsync();
+        // GET: MemberTraining/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return NotFound();
 
-        return NoContent();
+            var training = await _context.MemberTrainings
+                .FirstOrDefaultAsync(t => t.MemberTrainingId == id);
+
+            if (training == null) return NotFound();
+
+            var dto = new MemberTrainingdto
+            {
+                MemberTrainingId = training.MemberTrainingId,
+                MembershipId = training.MembershipId,
+                TrainerId = training.TrainerId,
+                TrainingType = training.TrainingType
+            };
+
+            return View(dto);
+        }
+
+        // POST: MemberTraining/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var training = await _context.MemberTrainings.FindAsync(id);
+            if (training != null)
+            {
+                _context.MemberTrainings.Remove(training);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        private async Task<bool> TrainingExists(int id)
+        {
+            return await _context.MemberTrainings.AnyAsync(t => t.MemberTrainingId == id);
+        }
     }
 }

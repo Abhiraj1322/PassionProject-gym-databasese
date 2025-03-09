@@ -76,42 +76,37 @@ public class TraineeController : Controller
 
         return View(dto); // Ensure the view expects TraineeDTO
     }
-
-    [HttpGet("Edit/{id}")]
+    // GET: Trainee/Edit/5
     public async Task<IActionResult> Edit(int id)
     {
-        var membership = await _context.Memberships.FindAsync(id);
-        if (membership == null) return NotFound();
+        var trainee = await _context.Trainees.FindAsync(id);
+        if (trainee == null) return NotFound();
 
-        var dto = new Membershipdto
+        var dto = new TraineeDTO
         {
-            MembershipId = membership.MembershipId,
-            MemberName = membership.MemberName,
-            PlanType = membership.PlanType,
-            StartDate = membership.StartDate,
-            EndDate = membership.EndDate
+            TrainerId = trainee.TrainerId,
+            Name = trainee.Name,
+            Specialty = trainee.Specialty
         };
 
-        return View(dto);
+        return View(dto); // Pass TraineeDTO instead of Membershipdto
     }
 
-    // POST: Membership/Edit/5
-    [HttpPost("Edit/{id}")]
+    // POST: Trainee/Edit/5
+    [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, Membershipdto dto)
+    public async Task<IActionResult> Edit(int id, TraineeDTO dto)
     {
-        if (id != dto.MembershipId) return BadRequest("ID mismatch");
+        if (id != dto.TrainerId) return BadRequest("ID mismatch");
 
         if (ModelState.IsValid)
         {
-            var membership = await _context.Memberships.FindAsync(id);
-            if (membership == null) return NotFound();
+            var trainee = await _context.Trainees.FindAsync(id);
+            if (trainee == null) return NotFound();
 
-            // Update fields
-            membership.MemberName = dto.MemberName;
-            membership.PlanType = dto.PlanType;
-            membership.StartDate = dto.StartDate;
-            membership.EndDate = dto.EndDate;
+            // Update trainee fields
+            trainee.Name = dto.Name;
+            trainee.Specialty = dto.Specialty;
 
             try
             {
@@ -119,22 +114,17 @@ public class TraineeController : Controller
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!await MembershipExists(id)) return NotFound();
+                if (!await TraineeExists(id)) return NotFound();
                 else throw;
             }
             return RedirectToAction(nameof(Index));
         }
+
         return View(dto);
     }
 
-    private async Task<bool> MembershipExists(int id)
-    {
-        return await _context.Memberships.AnyAsync(e => e.MembershipId == id);
-    }
-
-
-// GET: Trainee/Delete/5
-public async Task<IActionResult> Delete(int? id)
+    // GET: Trainee/Delete/5
+    public async Task<IActionResult> Delete(int? id)
     {
         if (id == null) return NotFound();
 

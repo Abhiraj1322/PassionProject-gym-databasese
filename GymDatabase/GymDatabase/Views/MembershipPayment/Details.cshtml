@@ -1,1 +1,67 @@
-﻿
+﻿@model GymDatabase.Models.Memebrship_paymentdto
+
+@{
+    ViewData["Title"] = "Membership Payment Details";
+}
+
+<!-- Custom Styles -->
+<style>
+    .payment-details-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .payment-details-container div {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+
+    .payment-details-container strong {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+</style>
+
+<!-- Payment details -->
+<div class="payment-details-container">
+    <h2>Membership Payment Details</h2>
+
+    <div>
+        <strong>Member Name:</strong> @ViewBag.MemberName
+    </div>
+    <div>
+        <strong>Membership Type:</strong> @ViewBag.PlanType
+    </div>
+    <div>
+        <strong>Payment Amount:</strong> $@Model.Amount
+    </div>
+    <div>
+        <strong>Payment Date:</strong> @Model.PaymentDate.ToShortDateString()
+    </div>
+
+    <!-- Back to list button -->
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

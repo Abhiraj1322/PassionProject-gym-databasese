@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GymDatabase.Models
 {
-    public class MemberTraining
+    public class MemeberTraining
     {
         [Key]
         public int MemberTrainingId { get; set; }

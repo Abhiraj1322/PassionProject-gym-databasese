@@ -1,23 +1,93 @@
 ﻿@model GymDatabase.Models.Memebrship_paymentdto
 
-<h1>Edit Membership Payment</h1>
+@{
+    ViewData["Title"] = "Edit Membership Payment";
+}
 
-<form asp-action="Edit" method="post">
-    <div class="form-group">
-        <label for="PaymentId">Payment ID</label>
-        <input type="number" class="form-control" id="PaymentId" name="PaymentId" value="@Model.PaymentId" readonly />
-    </div>
-    <div class="form-group">
-        <label for="MembershipId">Membership ID</label>
-        <input type="number" class="form-control" id="MembershipId" name="MembershipId" value="@Model.MembershipId" required />
-    </div>
-    <div class="form-group">
-        <label for="Amount">Amount</label>
-        <input type="number" class="form-control" id="Amount" name="Amount" value="@Model.Amount" required />
-    </div>
-    <div class="form-group">
-        <label for="PaymentDate">Payment Date</label>
-        <input type="date" class="form-control" id="PaymentDate" name="PaymentDate" value="@Model.PaymentDate.ToString("yyyy-MM-dd")" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
+<!-- Custom Styles -->
+<style>
+    .edit-payment-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 4px;
+        box-shadow: none;
+        padding: 10px;
+        font-size: 1em;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.1em;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    .form-group input[readonly] {
+        background-color: #f1f1f1;
+        cursor: not-allowed;
+    }
+</style>
+
+<!-- Edit Payment Form -->
+<div class="edit-payment-container">
+    <h1>Edit Membership Payment</h1>
+
+    <form asp-action="Edit" method="post">
+        <div class="form-group">
+            <label for="PaymentId">Payment ID</label>
+            <input type="number" class="form-control" id="PaymentId" name="PaymentId" value="@Model.PaymentId" readonly />
+        </div>
+        <div class="form-group">
+            <label for="MembershipId">Membership ID</label>
+            <input type="number" class="form-control" id="MembershipId" name="MembershipId" value="@Model.MembershipId" required />
+        </div>
+        <div class="form-group">
+            <label for="Amount">Amount</label>
+            <input type="number" class="form-control" id="Amount" name="Amount" value="@Model.Amount" required />
+        </div>
+        <div class="form-group">
+            <label for="PaymentDate">Payment Date</label>
+            <input type="date" class="form-control" id="PaymentDate" name="PaymentDate" value="@Model.PaymentDate.ToString("yyyy-MM-dd")" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>

@@ -1,25 +1,75 @@
 ﻿@model GymDatabase.Models.TraineeDTO
 
-@{
-    ViewData["Title"] = "Edit Trainee";
-}
+<!-- Custom Styles -->
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
 
-<h1>@ViewData["Title"]</h1>
+    .form-container {
+        margin-top: 30px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
+    .form-group {
+        margin-bottom: 20px;
+    }
 
-    <div class="form-group">
-        <label asp-for="Specialty" class="control-label"></label>
-        <input asp-for="Specialty" class="form-control" />
-        <span asp-validation-for="Specialty" class="text-danger"></span>
-    </div>
+        .form-group label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
 
-    <button type="submit" class="btn btn-primary">Save Changes</button>
-</form>
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
 
-<a href="@Url.Action("Index")" class="btn btn-secondary mt-2">Back to List</a>
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 5px;
+        background-color: #3498db;
+        border-color: #3498db;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+</style>
+
+<!-- Page Content -->
+<h1>Edit Trainee</h1>
+
+<div class="form-container">
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="TrainerId" />
+
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Specialty</label>
+            <input asp-for="Specialty" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

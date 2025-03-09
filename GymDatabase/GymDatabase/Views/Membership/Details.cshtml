@@ -6,18 +6,74 @@
 
 <h2>Membership Details</h2>
 
-<div>
-    <strong>Member Name:</strong> @Model.MemberName
-</div>
-<div>
-    <strong>Plan Type:</strong> @Model.PlanType
-</div>
-<div>
-    <strong>Start Date:</strong> @Model.StartDate.ToShortDateString()
-</div>
-<div>
-    <strong>End Date:</strong> @Model.EndDate.ToShortDateString()
+<div class="membership-details">
+    <div>
+        <strong>Member ID:</strong> @Model.MembershipId
+    </div>
+    <div>
+        <strong>Member Name:</strong> @Model.MemberName
+    </div>
+    <div>
+        <strong>Plan Type:</strong> @Model.PlanType
+    </div>
+    <div>
+        <strong>Start Date:</strong> @Model.StartDate.ToShortDateString()
+    </div>
+    <div>
+        <strong>End Date:</strong> @Model.EndDate.ToShortDateString()
+    </div>
 </div>
 
-<a asp-action="Edit" asp-route-id="@Model.MembershipId" class="btn btn-warning">Edit</a>
-<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+<div class="actions">
+    <a asp-action="Edit" asp-route-id="@Model.MembershipId" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+<style>
+    .membership-details div {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+    .membership-details strong {
+        color: #333;
+    }
+
+    .membership-details div {
+        padding: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .btn-warning {
+        background-color: #f39c12;
+        color: white;
+    }
+
+    .btn-secondary {
+        background-color: #7f8c8d;
+        color: white;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+</style>

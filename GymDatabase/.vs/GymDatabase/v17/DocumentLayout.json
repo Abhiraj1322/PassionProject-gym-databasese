@@ -1,66 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\",
+  "WorkspaceRootPath": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\models\\membertraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\models\\membertraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\models\\memebrship_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\models\\memebrship_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\models\\trainee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\models\\trainee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\controllers\\membershippaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\controllers\\membershippaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|d:\\abhiraj-file\\gymdatabase\\gymdatabase\\gymdatabase\\controllers\\traineecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\models\\memebertraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\models\\memebertraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\models\\memebrship_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\models\\memebrship_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\controllers\\traineecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\controllers\\traineecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\trainee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\trainee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\trainee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\trainee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\trainee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\trainee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\trainee\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\trainee\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\trainee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\trainee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membershippayment\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membershippayment\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|c:\\users\\abhra\\downloads\\gymdatabase\\gymdatabase\\gymdatabase\\gymdatabase\\views\\membership\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED2DA6EA-C30B-478D-AF97-087A42B61541}|GymDatabase\\GymDatabase.csproj|solutionrelative:gymdatabase\\views\\membership\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,200 +90,254 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T01:10:58.998Z",
+              "IsPinned": true
+            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:10:58.998Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Details.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Details.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Details.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T22:48:19.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MembershipController.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipController.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Controllers\\MembershipController.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipController.cs",
-              "RelativeToolTip": "GymDatabase\\Controllers\\MembershipController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T01:02:41.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:10:19.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Create.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Create.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Create.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Create.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T00:15:47.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Edit.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Edit.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Edit.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Edit.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T00:23:24.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T01:10:40.769Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MemberTraining.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\MemberTraining.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Models\\MemberTraining.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\MemberTraining.cs",
-              "RelativeToolTip": "GymDatabase\\Models\\MemberTraining.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Title": "Memebrship_payment.cs",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Memebrship_payment.cs",
+              "RelativeDocumentMoniker": "GymDatabase\\Models\\Memebrship_payment.cs",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Memebrship_payment.cs",
+              "RelativeToolTip": "GymDatabase\\Models\\Memebrship_payment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:23:01.225Z",
+              "WhenOpened": "2025-03-08T18:47:44.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemeberTraining.cs",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\MemeberTraining.cs",
+              "RelativeDocumentMoniker": "GymDatabase\\Models\\MemeberTraining.cs",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\MemeberTraining.cs",
+              "RelativeToolTip": "GymDatabase\\Models\\MemeberTraining.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:29:33.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MembershipController.cs",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipController.cs",
+              "RelativeDocumentMoniker": "GymDatabase\\Controllers\\MembershipController.cs",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipController.cs",
+              "RelativeToolTip": "GymDatabase\\Controllers\\MembershipController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T01:02:41.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAkwEwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T19:11:42.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Memebrship_payment.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Memebrship_payment.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Models\\Memebrship_payment.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Memebrship_payment.cs",
-              "RelativeToolTip": "GymDatabase\\Models\\Memebrship_payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Title": "TraineeController.cs",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\TraineeController.cs",
+              "RelativeDocumentMoniker": "GymDatabase\\Controllers\\TraineeController.cs",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\TraineeController.cs",
+              "RelativeToolTip": "GymDatabase\\Controllers\\TraineeController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAcwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:45:12.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:10:40.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:33:35.497Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Delete.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Trainee\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Delete.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Trainee\\Delete.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:11:49.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:08:06.521Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Create.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Trainee\\Create.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Create.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Trainee\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:11:18.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:07:23.922Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Trainee.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Trainee.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Models\\Trainee.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Models\\Trainee.cs",
-              "RelativeToolTip": "GymDatabase\\Models\\Trainee.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T02:10:09.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MembershipPaymentController.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipPaymentController.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Controllers\\MembershipPaymentController.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\MembershipPaymentController.cs",
-              "RelativeToolTip": "GymDatabase\\Controllers\\MembershipPaymentController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:54:39.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GymDatabase\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GymDatabase\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAABnAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T01:13:57.686Z"
+              "WhenOpened": "2025-03-08T19:06:09.679Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "TraineeController.cs",
-              "DocumentMoniker": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\TraineeController.cs",
-              "RelativeDocumentMoniker": "GymDatabase\\Controllers\\TraineeController.cs",
-              "ToolTip": "D:\\abhiraj-file\\gymdatabase\\GymDatabase\\GymDatabase\\Controllers\\TraineeController.cs",
-              "RelativeToolTip": "GymDatabase\\Controllers\\TraineeController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:04:11.409Z"
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Delete.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T19:03:59.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Details.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Trainee\\Details.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Details.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Trainee\\Details.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAkwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T19:08:35.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Trainee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Index.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Trainee\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T19:09:54.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Index.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Index.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T19:01:56.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Trainee\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Trainee\\Edit.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Trainee\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:38:47.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Edit.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Edit.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAmwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:59:22.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Delete.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Delete.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Delete.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:58:13.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Create.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Create.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Create.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Create.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAmwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:57:09.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\MembershipPayment\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:31:27.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Details.cshtml",
+              "RelativeDocumentMoniker": "GymDatabase\\Views\\Membership\\Details.cshtml",
+              "ToolTip": "C:\\Users\\abhra\\Downloads\\gymdatabase\\gymdatabase\\GymDatabase\\GymDatabase\\Views\\Membership\\Details.cshtml",
+              "RelativeToolTip": "GymDatabase\\Views\\Membership\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T18:43:20.875Z"
             }
           ]
         }

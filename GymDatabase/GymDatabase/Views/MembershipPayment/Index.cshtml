@@ -1,9 +1,67 @@
 ﻿@model IEnumerable<GymDatabase.Models.Memebrship_paymentdto>
 
-<h1>Membership Payments</h1>
-<p>
-    <a href="@Url.Action("Create")">Create New Payment</a>
+@{
+    ViewData["Title"] = "Membership Payments";
+}
+
+<!-- Custom Styles -->
+<style>
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .create-payment-link {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        .table thead {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 4px 8px;
+        }
+
+            .table a:hover {
+                color: #0056b3;
+            }
+</style>
+
+<!-- Page Content -->
+<h1>@ViewData["Title"]</h1>
+
+<p class="create-payment-link">
+    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Payment</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -21,7 +79,7 @@
                 <td>@payment.PaymentId</td>
                 <td>@payment.MembershipId</td>
                 <td>@payment.Amount</td>
-                <td>@payment.PaymentDate</td>
+                <td>@payment.PaymentDate.ToShortDateString()</td>
                 <td>
                     <a href="@Url.Action("Details", new { id = payment.PaymentId })">Details</a> |
                     <a href="@Url.Action("Edit", new { id = payment.PaymentId })">Edit</a> |

@@ -11,7 +11,7 @@ namespace GymDatabase.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        public ICollection<MemberTraining> MemberTrainings { get; set; }
+        public ICollection<MemeberTraining> MemberTrainings { get; set; }
         public ICollection<Memebrship_payment> Memebrship_payments { get; set; }
 
     }
